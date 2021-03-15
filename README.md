@@ -56,13 +56,13 @@ The first thing you'll need to deploy on Akash is a docker image. This step will
 
 You can skip this if you already have a docker image you want to run on Akash. You can also fork this repo and setup Docker Hub to automatically build from GitHub.
 
-Note Akash needs a public repository for now.
+Note Akash needs a public repository for now. Also note that you should specify an explicit version rather than `latest` so you can update the image as required. 
 
 ```
 # Change below to your user/repo
 
-docker build . -t tombeynon/akash-hello-world 
-docker push tombeynon/akash-hello-world:latest
+docker build . -t tombeynon/akash-hello-world:release-v0.1.0
+docker push tombeynon/akash-hello-world:release-v0.1.0
 ```
 
 You can now update deploy.yml to use your user/repo.
