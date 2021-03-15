@@ -121,3 +121,11 @@ Logs can be requested in the same way as the lease-status.
 ```
 make lease_logs PROVIDER=**provider** DSEQ=**dseq**
 ```
+
+### Deploy history and balance
+
+You can request a list of deployments which will include the balance of your escrow account for each and how much has been withdrawn. 
+
+```
+make list_deployment
+```

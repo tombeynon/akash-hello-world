@@ -53,6 +53,10 @@ update_deployment:
 close_deployment:
 	$(AKASH_BIN) tx deployment close --from $(KEY_NAME) --node $(AKASH_NODE) --chain-id $(AKASH_CHAIN_ID) --fees $(FEES) ${KEYRING_OPT} --dseq ${DSEQ} --gas=auto
 
+list_deployment:
+	@test $${AKASH_ADDRESS?Please set environment variable AKASH_ADDRESS}
+	$(AKASH_BIN) query deployment list --owner $(AKASH_ADDRESS) --chain-id $(AKASH_CHAIN_ID) --node $(AKASH_NODE)
+
 list_bid:
 	@test $${AKASH_ADDRESS?Please set environment variable AKASH_ADDRESS}
 	$(AKASH_BIN) query market bid list --owner $(AKASH_ADDRESS) --chain-id $(AKASH_CHAIN_ID) --node $(AKASH_NODE)
