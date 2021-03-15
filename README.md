@@ -111,3 +111,11 @@ make lease_status PROVIDER=**provider** DSEQ=**dseq**
 ```
 
 You should see a list of `uris` - the one and only value will be your website!
+
+### Accessing logs
+
+Logs can be requested in the same way as the lease-status. 
+
+```
+make lease_logs PROVIDER=**provider** DSEQ=**dseq**
+```

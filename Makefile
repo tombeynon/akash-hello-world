@@ -72,5 +72,8 @@ get_lease:
 lease_status:
 	$(AKASH_BIN) provider lease-status --node $(AKASH_NODE) --from $(KEY_NAME) --dseq $(DSEQ) --oseq $(OSEQ) --gseq $(GSEQ) --provider $(PROVIDER) ${KEYRING_OPT}
 
+lease_logs:
+	$(AKASH_BIN) provider lease-logs --node $(AKASH_NODE) --from $(KEY_NAME) --dseq $(DSEQ) --oseq $(OSEQ) --gseq $(GSEQ) --provider $(PROVIDER) ${KEYRING_OPT}
+
 send_manifest:
 	$(AKASH_BIN) provider send-manifest $(DEPLOY_ROOT)/deploy.yml --node $(AKASH_NODE) --dseq $(DSEQ)  --from $(KEY_NAME) --provider $(PROVIDER) $(KEYRING_OPT)
