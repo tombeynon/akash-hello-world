@@ -10,7 +10,7 @@ Make sure you've read the [Akash docs](https://docs.akash.network/) first and us
 
 Some issues I'm aware of:
 
-- We don't verify the host with signedBy. I wasn't sure what to use here as the docs had testnet addresses
+- ~~We don't verify the host with signedBy. I wasn't sure what to use here as the docs had testnet addresses~~
 - Fees are probably set too high (5000 uakt / 0.005 akt) but I kept getting timeouts
 
 I'll update this repo as I learn more.
