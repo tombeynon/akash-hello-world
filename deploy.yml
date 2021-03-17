@@ -17,7 +17,7 @@ profiles:
     web:
       resources:
         cpu:
-          units: 0.1
+          units: 0.5
         memory:
           size: 512Mi
         storage:
@@ -32,7 +32,7 @@ profiles:
       pricing:
         web:
           denom: uakt
-          amount: 100
+          amount: 1
 
 deployment:
   web:

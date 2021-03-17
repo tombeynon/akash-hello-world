@@ -1,7 +1,7 @@
 # Akash Hello World
 
 Example: 
-- http://22d57uuq1lbef9vgj04afiduvk.ingress.ewr1p0.mainnet.akashian.io
+- http://8lim5k05ft9bhdm12vpvrghcr8.ingress.ewr1p0.mainnet.akashian.io
 - https://akashhw.tombeynon.co.uk ([same site](https://github.com/tombeynon/akash-hello-world/blob/master/deploy.yml#L11), uses a CNAME and cloudflare SSL)
 
 This is an example of how to run a simple HTML/CSS/JS site on Akash. I wrote this to document the process for myself and it's my first time working with Akash, so please treat accordingly. 
@@ -14,6 +14,12 @@ Some issues I'm aware of:
 - Fees are probably set too high (5000 uakt / 0.005 akt) but I kept getting timeouts
 
 I'll update this repo as I learn more.
+
+## Cost
+
+Pricing is defined in the deploy.yml file, and is currently 1uakt per block for a 0.5 CPU, 512MB memory and storage container. When you create a deployment you deposit 5AKT into an escrow account, which is used to pay the running cost. A block is mined roughly every 7 seconds, which at the current price of AKT puts 1uakt per block around $1.88 per month. Not a typo.
+
+Note that you currently can't update the price of a running deployment.
 
 ## Setup
 
